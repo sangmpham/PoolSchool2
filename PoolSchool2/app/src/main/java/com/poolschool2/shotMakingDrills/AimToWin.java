@@ -29,16 +29,16 @@ import java.util.Scanner;
 public class AimToWin extends Activity {
     private Button save, graph;
     private SaveFile toSave ;
-    private String fileName;
+    private String fileName; //file name to save to
     private RadioButton shot1,shot2,shot3,shot4,shot5,shot6,shot7;
     private int[] shotList;
     private OutputStreamWriter out;
     private File file;
     private String writeString;
-    private FileOutputStream fos;
-    private FileInputStream fis;
-    private ArrayList<Integer> made = new ArrayList<>();
-    private ArrayList<Integer> miss = new ArrayList<>();
+    private FileOutputStream fos;//for output
+    private FileInputStream fis;//for input
+    private ArrayList<Integer> made = new ArrayList<>();//contain all the miss
+    private ArrayList<Integer> miss = new ArrayList<>();//contain all the made
 
 
 
@@ -48,7 +48,7 @@ public class AimToWin extends Activity {
         setContentView(R.layout.aim_to_win);
         //toSave = new SaveFile(fileName);
         shotList = new int[7];
-        shot1 =(RadioButton)findViewById(R.id.AimToWinRadio1);
+        shot1 =(RadioButton)findViewById(R.id.AimToWinRadio1);//get all radiobutton
         shot2 =(RadioButton)findViewById(R.id.AimToWinRadio2);
         shot3 =(RadioButton)findViewById(R.id.AimToWinRadio3);
         shot4 =(RadioButton)findViewById(R.id.AimToWinRadio4);
@@ -56,8 +56,8 @@ public class AimToWin extends Activity {
         shot6 =(RadioButton)findViewById(R.id.AimToWinRadio6);
         shot7 =(RadioButton)findViewById(R.id.AimToWinRadio7);
 
-        fileName = "aimToWin1.txt";
-        addListenerOnButton();
+        fileName = "aimToWin1.txt"; //text to save drill to
+        addListenerOnButton();//listener to save or graph drill
     }
     public void addListenerOnButton() {
         //save the result of the drill
@@ -84,15 +84,18 @@ public class AimToWin extends Activity {
 
     }
 
+    /*
+    *method writeFile() save the drill result to file with date
+     */
     public void writeFile(){
         //JSONArray data = new JSONArray();
         //JSONObject
-        try {
-            fos = openFileOutput(fileName, MODE_APPEND);
+        try {//save drill to file
+            fos = openFileOutput(fileName, MODE_APPEND);//open file
             OutputStreamWriter osw = new OutputStreamWriter(fos);
-            fillShotList();
-            createString();
-            osw.write(writeString);
+            fillShotList();//see which shot is made or miss
+            createString();//cat all result to single string
+            osw.write(writeString);//write string
             osw.close();
             fos.close();
             Toast.makeText(getBaseContext(), "Drill Saved", Toast.LENGTH_LONG).show();
@@ -113,6 +116,7 @@ public class AimToWin extends Activity {
     /*
     *method: readFile
     * read file name aimtowin.txt
+    * this method is not need since i move the readfile to graph
      */
     public void readFile(){
         String line;
@@ -200,21 +204,27 @@ public class AimToWin extends Activity {
 
 
     }
+
+    /*
+    createString create a string for all the drill result
+     */
     public void createString() throws ParseException {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         Date dateNoTime;
         writeString= "";
 
 
-        dateNoTime = sdf.parse(sdf.format(new Date()));
+        dateNoTime = sdf.parse(sdf.format(new Date()));//create date without time
 
         writeString = dateNoTime.toString();
-        for(int i=0;i<shotList.length;i++){
+        for(int i=0;i<shotList.length;i++){//cat each drill result to writeString
             writeString = writeString + " " + shotList[i];
         }
-        writeString=writeString + " "+ "\n";
-        System.out.println("Create String*****************************"+writeString);
+        writeString=writeString + " "+ "\n";//add end of line for each session
+        //System.out.println("Create String*****************************"+writeString);
     }
+
+    //set all radio button to uncheck
     private void clearRadioButton(){
         shot1.setChecked(false);
         shot2.setChecked(false);
@@ -224,6 +234,12 @@ public class AimToWin extends Activity {
         shot6.setChecked(false);
         shot7.setChecked(false);
     }
+
+    /*
+    //fillShotList()
+    //method check if to see which shot he use made or miss
+    // if radio button is check then made else miss
+     */
     private void fillShotList(){
         if(shot1.isChecked())
             shotList[0] =1;

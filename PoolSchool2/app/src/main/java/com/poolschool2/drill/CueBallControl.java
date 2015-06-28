@@ -34,6 +34,8 @@ public class CueBallControl extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 TextView textView = (TextView) view;
+
+                //set the action taken when listview is click
                 if(position==0){
                     Intent intent;
                     intent = new Intent(getApplicationContext(),ProgressiveDrill1.class);

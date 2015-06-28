@@ -28,6 +28,7 @@ import com.poolschool.poolschool.R;
     }
     public void addListenerOnButton(){
 
+        //open activity depending on which button was click
         cueBallControl = (Button) findViewById(R.id.cueBallControl);
         cueBallControl.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -26,9 +26,9 @@ import java.util.Date;
 import java.util.Scanner;
 
 public class BCA8League extends Activity {
-    private final int NUMPLAYER=10;
-    private ArrayList<EditText> playerName= new ArrayList<>();
-    private ArrayList<ArrayList<EditText>> playerScores = new ArrayList<ArrayList<EditText>>();
+    private final int NUMPLAYER=10; //total number of player
+    private ArrayList<EditText> playerName= new ArrayList<>(); //
+    private ArrayList<ArrayList<EditText>> playerScores = new ArrayList<ArrayList<EditText>>();//hold all three score for each player
     private ArrayList<EditText> playerTotal = new ArrayList<>();
     private ArrayList<EditText> playerAve = new ArrayList<>();
     private EditText homeTeamName ;
@@ -40,9 +40,9 @@ public class BCA8League extends Activity {
     private FileOutputStream fos;
     private FileInputStream fis;
     private String fileName;
-    private String allHomeTeamFile;
-    private String allAwayTeamFile;
-    private ArrayList<String> homeTeamNameFromFile = new ArrayList<>();
+    private String allHomeTeamFile;//file to check in ViewPreviousSession class
+    private String allAwayTeamFile;//file to check in ViewPreviousSession class
+    private ArrayList<String> homeTeamNameFromFile = new ArrayList<>();//hold all team to see if in fill if not put in file
     private ArrayList<String> awayTeamNameFromFile = new ArrayList<>();
     private SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
     private Date dateNoTime ;
@@ -89,6 +89,7 @@ public class BCA8League extends Activity {
 
     }
 
+    //save the player when the save button is push
     public void addListenerOnButton() {
         //save the result of the drill
         save = (Button) findViewById(R.id.bca8LeaguePlaySave);
@@ -109,6 +110,9 @@ public class BCA8League extends Activity {
 
     }
 
+    /*
+    writeallteamfile collect all the team that has been played against. No duplicate
+     */
     private void writeAllTeamFile(){
         allHomeTeamFile = "BCA8HomeTeamFile2.txt";
         allAwayTeamFile = "BCA8AwayTeamFile2.txt";
@@ -153,7 +157,10 @@ public class BCA8League extends Activity {
 
     }
 
-
+    /*
+    //@method: readAllTeamFile
+    //read the collect all the team from each file
+     */
     private void readAllTeamFile(String allTeamFile, ArrayList<String> teamName){
         String line;
 
@@ -387,7 +394,13 @@ public class BCA8League extends Activity {
         playerAve.add((EditText) findViewById(R.id.BCA8Player10Avg));
     }
 
+/*
+method: addTextChange();
+medthod automatically change the total field of the player and team
+Could have been done a lot easier. Will change it to shorter implementation later
+Shorter version should just call a method passing the position fo the player
 
+ */
     public void addTextChange(){
 
         //player 1

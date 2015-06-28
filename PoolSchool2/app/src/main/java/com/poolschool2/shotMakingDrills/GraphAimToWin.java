@@ -48,12 +48,15 @@ public class GraphAimToWin extends Activity {
         }
         XYMultipleSeriesDataset dataset = new XYMultipleSeriesDataset();
         dataset.addSeries(series);
+
         //create renderer of graph
         XYSeriesRenderer renderer = new XYSeriesRenderer();
         renderer.setLineWidth(2);
         renderer.setColor(Color.RED);
+
         //include low and max value
         renderer.setDisplayBoundingPoints(true);
+
         //add point markers
         renderer.setPointStyle(PointStyle.CIRCLE);
         renderer.setPointStrokeWidth(3);
@@ -64,6 +67,7 @@ public class GraphAimToWin extends Activity {
 
         //avoid black boarder
         mRenderer.setMarginsColor(Color.argb(0x00, 0xff, 0x00, 0x00));//transparent margins
+
         //disable pan on two axis
         mRenderer.setPanEnabled(false, false);
         mRenderer.setChartTitle("Aim To Win");

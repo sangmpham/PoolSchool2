@@ -19,10 +19,12 @@ public class MainActivity extends Activity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //set all imagebutton
         drill = (ImageButton) findViewById(R.id.drill);
         fundamental = (ImageButton) findViewById(R.id.fundamental);
         league = (ImageButton) findViewById(R.id.league);
 
+        //onclicklistener for each imagebutton
         drill.setOnClickListener(this);
         fundamental.setOnClickListener(this);
         league.setOnClickListener(this);
@@ -32,7 +34,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
 
     @Override
     public void onClick(View v){
-
+        //go to activities depending on the button click
         if(v==drill)
             startActivity(new Intent(this, Drills.class));
         else if(v==fundamental)

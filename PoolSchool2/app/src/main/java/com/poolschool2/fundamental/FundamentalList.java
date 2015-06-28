@@ -29,6 +29,7 @@ public class FundamentalList extends Activity {
     }
 
     private void populateFundamentalI(){
+        //enter all the string for each listview position
         imageList.add(new FundamentI(R.drawable.hold1, "Hold the pool cue at your hip with your dominant hand. Place one hand at the point on the stick close to the rear where it is balanced. There will usually be tape there. Place your hand approximately 4 to 5 inches (10.2 to 12.7 cm) back. Ideally, your back hand should be at a 90-degree angle with your cue."));
         imageList.add(new FundamentI(R.drawable.hold2, "Lower yourself to the table. Once you grip the cue with your dominant hand and find your shot, you should lower your body toward the table, so you're staring down the line of the cue ball. You won't be able to make your shot if you're stiff and upright"));
         imageList.add(new FundamentI(R.drawable.hold3,"Make an open bridge with your other hand. Place your other hand about 6-8 inches (15-20 cm) away from the cue ball down on the table. The closer you are to the ball, the more precision you'll have with your shot. Once your hand is down, you will make a bridge, or a cradle with your hand that will allow you to balance the cue on your hand and hit your shots. Though certain bridges work better in certain situations, it's best to be familiar with the most common bridge, the open bridge, first"));
@@ -59,6 +60,8 @@ public class FundamentalList extends Activity {
         ListView list = (ListView) findViewById(R.id.fundListView);
         list.setAdapter(adapter);
     }
+
+    //populate each position in the listview with each position the imagelist
 private class MyListAdapter extends ArrayAdapter{
     public MyListAdapter(){
         super(FundamentalList.this, R.layout.fundlistviewstruct,imageList);

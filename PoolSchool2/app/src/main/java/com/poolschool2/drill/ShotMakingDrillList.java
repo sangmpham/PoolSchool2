@@ -29,7 +29,7 @@ public class ShotMakingDrillList extends Activity {
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
+                //set the action taken when listview is click
                 if(position==0){
                     Intent intent;
                     intent = new Intent(getApplicationContext(),AimToWin.class);
