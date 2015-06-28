@@ -1,0 +1,802 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#ffffffff"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle = "bold"
+            android:text="9 Ball League Score Sheet"
+            android:id="@+id/BCA9Title"
+            android:textSize="30dp"
+            android:background="#ffdaa520"
+            android:textColor="#ffffffff"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffdaa520">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffdaa520"
+                android:textColor="#ffffffff"
+                android:textStyle = "bold"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="League Name:   "
+                android:id="@+id/BCA9LeageTitle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffdaa520"
+                android:textColor="#ffffffff"
+                android:textColorHint="#ffffffff"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:hint="Enter league name"
+
+                android:id="@+id/BCA9LeagueName" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffdaa520">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffdaa520"
+                android:textColor="#ffffffff"
+                android:textStyle = "bold"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Date:   "
+                android:id="@+id/BCA9LeagueDateTitle" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="#ffffffff"
+                android:inputType="date"
+                android:ems="10"
+                android:hint="Enter Date"
+                android:id="@+id/BCA9LeagueDate" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffdaa520">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffdaa520"
+                android:textColor="#ffffffff"
+                android:textStyle = "bold"
+                android:textSize="20dp"
+                android:text="Home Team Name:  "
+                android:id="@+id/BCA9HomeTeamTitle" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:background="#ffdaa520"
+                android:textColor="#ffffffff"
+                android:layout_weight="1"
+                android:hint="Enter team name"
+                android:textColorHint="#ffffffff"
+                android:id="@+id/BCA9HomeTeamName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="#ffdaa520">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="40dp"
+                android:background="#ffdaa520"
+                android:textColor="#ffffffff"
+                android:textStyle = "bold"
+                android:textSize="20dp"
+                android:text="Full Name"
+                android:id="@+id/BCA9PlayerNameTitle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffdaa520"
+                android:textColor="#ffffffff"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:text="1"
+                android:id="@+id/BCA9Score1Title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="#ffdaa520"
+                android:textColor="#ffffffff"
+                android:textStyle = "bold"
+                android:textSize="20dp"
+                android:text="2"
+                android:id="@+id/BCA9Score2Title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="#ffdaa520"
+                android:textColor="#ffffffff"
+                android:textStyle = "bold"
+                android:textSize="20dp"
+                android:text="3"
+                android:id="@+id/BCA9Score3Title" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="#ffdaa520"
+                android:textColor="#ffffffff"
+                android:textStyle = "bold"
+                android:textSize="20dp"
+                android:text="4"
+                android:id="@+id/BCA9Score4Title" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="#ffdaa520"
+                android:textColor="#ffffffff"
+                android:textStyle = "bold"
+                android:textSize="20dp"
+                android:text="5"
+                android:id="@+id/BCA9Score5Title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="#ffdaa520"
+                android:textColor="#ffffffff"
+                android:textStyle = "bold"
+                android:textSize="20dp"
+                android:text="Tot."
+                android:id="@+id/BCA9TotalTitle" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff000000"
+            android:background="#ffffffff"
+            android:layout_marginBottom="2dp">
+
+            <EditText
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Name"
+                android:id="@+id/BCA9Player1Name" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player1Score1" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player1Score2" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player1Score3" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player1Score4" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player1Score5" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player1Total" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff000000"
+            android:background="#ffffffff"
+            android:layout_marginBottom="2dp">
+
+            <EditText
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Name"
+                android:id="@+id/BCA9Player2Name" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player2Score1" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player2Score2" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player2Score3" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player2Score4" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player2Score5" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player2Total" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff000000"
+            android:background="#ffffffff"
+            android:layout_marginBottom="2dp">
+
+            <EditText
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Name"
+                android:id="@+id/BCA9Player3Name" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player3Score1" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player3Score2" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player3Score3" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player3Score4" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player3Score5" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player3Total" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff000000"
+            android:background="#ffffffff"
+            android:layout_marginBottom="2dp">
+
+            <EditText
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Name"
+                android:id="@+id/BCA9Player4Name" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player4Score1" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player4Score2" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player4Score3" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player4Score4" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player4Score5" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player4Total" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff000000"
+            android:background="#ffffffff"
+            android:layout_marginBottom="2dp">
+
+            <EditText
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Name"
+                android:id="@+id/BCA9Player5Name" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player5Score1" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player5Score2" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player5Score3" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player5Score4" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player5Score5" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player5Total" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="2dp"
+            android:background="#ffdaa520">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffdaa520"
+                android:textColor="#ffffffff"
+                android:textStyle = "bold"
+                android:textSize="22dp"
+                android:text="Away Team Name:  "
+                android:id="@+id/BCA9AwayTeamTitle" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:background="#ffdaa520"
+                android:textColor="#ffffffff"
+                android:layout_weight="1"
+                android:hint="Enter team name"
+                android:textColorHint="#ffffffff"
+                android:id="@+id/BCA9AwayTeamName" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff000000"
+            android:background="#ffffffff"
+            android:layout_marginBottom="2dp">
+
+            <EditText
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Name"
+                android:id="@+id/BCA9Player6Name" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player6Score1" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player6Score2" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player6Score3" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player6Score4" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player6Score5" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:id="@+id/BCA9Player6Total" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff000000"
+            android:background="#ffffffff"
+            android:layout_marginBottom="2dp">
+
+            <EditText
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="Enter Name"
+                android:id="@+id/BCA9Player7Name" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="0"
+                android:id="@+id/BCA9Player7Score1" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="0"
+                android:id="@+id/BCA9Player7Score2" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="0"
+                android:id="@+id/BCA9Player7Score3" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="0"
+                android:id="@+id/BCA9Player7Score4" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="0"
+                android:id="@+id/BCA9Player7Score5" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="0"
+                android:id="@+id/BCA9Player7Total" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#ffffffff"
+            android:layout_marginBottom="2dp">
+
+            <EditText
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="Enter Name"
+                android:id="@+id/BCA9Player8Name" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="0"
+                android:id="@+id/BCA9Player8Score1" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="0"
+                android:id="@+id/BCA9Player8Score2" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="0"
+                android:id="@+id/BCA9Player8Score3" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="0"
+                android:id="@+id/BCA9Player8Score4" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="0"
+                android:id="@+id/BCA9Player8Score5" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="0"
+                android:id="@+id/BCA9Player8Total" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#ffffffff"
+            android:layout_marginBottom="3dp">
+
+            <EditText
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="Enter Name"
+                android:id="@+id/BCA9Player9Name" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="0"
+                android:id="@+id/BCA9Player9Score1" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="0"
+                android:id="@+id/BCA9Player9Score2" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="0"
+                android:id="@+id/BCA9Player9Score3" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="0"
+                android:id="@+id/BCA9Player9Score4" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="0"
+                android:id="@+id/BCA9Player9Score5" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="0"
+                android:id="@+id/BCA9Player9Total" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#ffffffff"
+            android:layout_marginBottom="3dp">
+            <EditText
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="Enter Name"
+                android:id="@+id/BCA9Player10Name" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="0"
+                android:id="@+id/BCA9Player10Score1" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="0"
+                android:id="@+id/BCA9Player10Score2" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="0"
+                android:id="@+id/BCA9Player10Score3" />
+            <EditText
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="0"
+                android:id="@+id/BCA9Player10Score4" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="0"
+                android:id="@+id/BCA9Player10Score5" />
+            <EditText
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:background="#ffffffff"
+                android:hint="0"
+                android:id="@+id/BCA9Player10Total" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffdaa520"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ffdaa520"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Home Team Score:               "
+                    android:id="@+id/BCA9HomeTeamTotalScoreTitle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ffdaa520"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+
+                    android:text="0"
+                    android:id="@+id/BCA9HomeTeamTotalScore" />
+            </LinearLayout>
+
+            <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffdaa520"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Away Team Score:                "
+                android:background="#ffdaa520"
+                android:id="@+id/BCA9AwayTeamTotalScoreTitle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="#ffdaa520"
+                android:text="0"
+                android:id="@+id/BCA9AwayTeamTotalScore" />
+        </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffdaa520"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Winning Team:            "
+                    android:background="#ffdaa520"
+                    android:id="@+id/BCA9WinTeamTitle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:background="#ffdaa520"
+                    android:text="0"
+                    android:id="@+id/BCA9WinTeam" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.poolschool2.CueBallControlDrills.ProgressivePositionDrill2"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressiveDrill1Image"
+            android:src ="@drawable/progressivepositiondrill2pic"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This drill will help you with basic cue ball control. Although basic, these position control come up very often. Try to get the cue ball to stop at the different location. There are four location for each cue ball hit. If you got to the location then check the radio button. If not then leave the radio button uncheck."
+
+            android:id="@+id/progressiveDrill1Text"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffffff" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight=".5">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="high 1"
+                android:textColor="#f00"
+                android:id="@+id/progressDrill1High1" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="high 2"
+                android:textColor="#f00"
+                android:id="@+id/progressDrill1High2" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="high 3"
+                android:textColor="#f00"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/progressDrill1High3" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="high 4"
+                android:textColor="#f00"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/progressDrill1High4" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight=".5">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="center 1"
+                android:textColor="#f0f0"
+                android:id="@+id/progressDrill1Center1" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="center 2"
+                android:textColor="#f0f0"
+                android:id="@+id/progressDrill1Center2" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="center 3"
+                android:textColor="#f0f0"
+
+                android:id="@+id/progressDrill1Center3" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="center4"
+                android:textColor="#f0f0"
+
+                android:id="@+id/progressDrill1Center4" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight=".5">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="low 1"
+                android:textColor="#fffff331"
+                android:id="@+id/progressDrill1Low1" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fffff331"
+                android:layout_marginLeft="8dp"
+                android:text="low 2"
+
+                android:id="@+id/progressDrill1Low2" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="low 3"
+                android:textColor="#fffff331"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/progressDrill1Low3" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="low 4"
+                android:textColor="#fffff331"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/progressDrill1Low4" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight=".5"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Save"
+                android:id="@+id/saveProgressivePositionDrill2" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Graph"
+                android:id="@+id/graphProgressivePositionDrill2" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

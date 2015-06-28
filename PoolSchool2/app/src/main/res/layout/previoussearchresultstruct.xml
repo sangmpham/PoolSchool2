@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff000000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ff000000"
+            android:textColor="#ffffffff"
+            android:textStyle = "bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Date:   "
+            android:id="@+id/BCA8LeagueDateTitle" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="date"
+            android:ems="10"
+            android:hint="Enter Date"
+            android:id="@+id/BCA8LeagueDate" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textStyle = "bold"
+            android:textSize="20dp"
+            android:text="Home Team Name:  "
+            android:id="@+id/BCA8HomeTeamTitle" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:background="#ff000000"
+            android:textColor="#ffffffff"
+            android:layout_weight="1"
+            android:hint="Enter team name"
+            android:textColorHint="#ffffffff"
+            android:id="@+id/BCA8HomeTeamName" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#ff000000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ff000000"
+            android:textColor="#ffffffff"
+            android:layout_marginRight="0dp"
+            android:textStyle = "bold"
+            android:textSize="20dp"
+            android:text="Avg."
+            android:id="@+id/BCA8AvgTitle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#ff000000"
+            android:textColor="#ffffffff"
+            android:textStyle = "bold"
+            android:textSize="20dp"
+            android:text="Full Name"
+            android:id="@+id/BCA8PlayerName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ff000000"
+            android:textColor="#ffffffff"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:text="1"
+            android:id="@+id/BCA8Score1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="#ff000000"
+            android:textColor="#ffffffff"
+            android:textStyle = "bold"
+            android:textSize="20dp"
+            android:text="2"
+            android:id="@+id/BCA8Score2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="#ff000000"
+            android:textColor="#ffffffff"
+            android:textStyle = "bold"
+            android:textSize="20dp"
+            android:text="3"
+            android:id="@+id/BCA8Score3" />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="#ff000000"
+            android:textColor="#ffffffff"
+            android:textStyle = "bold"
+            android:textSize="20dp"
+            android:text="Tot."
+            android:id="@+id/BCA8ScoretotalTitle" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/scrollView" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player1Avg" />
+
+                <EditText
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Name"
+                    android:id="@+id/BCA8Player1Name" />
+                <EditText
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player1Score1" />
+                <EditText
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player1Score2" />
+                <EditText
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player1Score3" />
+
+                <EditText
+                    android:layout_width="28dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player1Total" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player2Avg" />
+
+                <EditText
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Name"
+                    android:id="@+id/BCA8Player2Name" />
+                <EditText
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player2Score1" />
+
+                <EditText
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player2Score2" />
+                <EditText
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player2Score3" />
+
+                <EditText
+                    android:layout_width="28dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player2Total" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player3Avg" />
+
+                <EditText
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Name"
+                    android:id="@+id/BCA8Player3Name" />
+                <EditText
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player3Score1" />
+                <EditText
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player3Score2" />
+                <EditText
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player3Score3" />
+
+                <EditText
+                    android:layout_width="28dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player3Total" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player4Avg" />
+
+                <EditText
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Name"
+                    android:id="@+id/BCA8Player4Name" />
+                <EditText
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player4Score1" />
+                <EditText
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player4Score2" />
+                <EditText
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player4Score3" />
+
+                <EditText
+                    android:layout_width="28dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player4Total" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player5Avg" />
+
+                <EditText
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Name"
+                    android:id="@+id/BCA8Player5Name" />
+                <EditText
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player5Score1" />
+                <EditText
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player5Score2" />
+                <EditText
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player5Score3" />
+
+                <EditText
+                    android:layout_width="28dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player5Total" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#ff000000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ff000000"
+            android:textColor="#ffffffff"
+            android:textStyle = "bold"
+            android:textSize="22dp"
+            android:text="Away Team Name:  "
+            android:id="@+id/BCA8awayTeamTitle" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:background="#ff000000"
+            android:textColor="#ffffffff"
+            android:layout_weight="1"
+            android:hint="Enter team name"
+            android:textColorHint="#ffffffff"
+            android:id="@+id/BCA8ScoreAwayTeamName" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/scrollView2" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player6Avg" />
+
+                <EditText
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Name"
+                    android:id="@+id/BCA8Player6Name" />
+                <EditText
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player6Score1" />
+                <EditText
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player6Score2" />
+                <EditText
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player6Score3" />
+
+                <EditText
+                    android:layout_width="28dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player6Total" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player7Avg" />
+
+                <EditText
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Name"
+                    android:id="@+id/BCA8Player7Name" />
+                <EditText
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player7Score1" />
+                <EditText
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player7Score2" />
+                <EditText
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player7Score3" />
+
+                <EditText
+                    android:layout_width="28dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player7Total" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player8Avg" />
+
+                <EditText
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Name"
+                    android:id="@+id/BCA8Player8Name" />
+                <EditText
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player8Score1" />
+                <EditText
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player8Score2" />
+                <EditText
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player8Score3" />
+
+                <EditText
+                    android:layout_width="28dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player8Total" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player9Avg" />
+
+                <EditText
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Name"
+                    android:id="@+id/BCA8Player9Name" />
+                <EditText
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player9Score1" />
+                <EditText
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player9Score2" />
+                <EditText
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player9Score3" />
+
+                <EditText
+                    android:layout_width="28dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player9Total" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player10Avg" />
+
+                <EditText
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Name"
+                    android:id="@+id/BCA8Player10Name" />
+                <EditText
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player10Score1" />
+                <EditText
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player10Score2" />
+                <EditText
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player10Score3" />
+
+                <EditText
+                    android:layout_width="28dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:id="@+id/BCA8Player10Total" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Home Team Score:               "
+            android:id="@+id/BCA8HomeTeamTotalScoreTitle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textAppearance="?android:attr/textAppearanceLarge"
+
+            android:text="0"
+            android:id="@+id/BCA8HomeTeamTotalScore" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Away Team Score:                "
+
+            android:id="@+id/BCA8AwayTeamTotalScoreTitle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+
+            android:text="0"
+            android:id="@+id/BCA8AwayTeamTotalScore" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

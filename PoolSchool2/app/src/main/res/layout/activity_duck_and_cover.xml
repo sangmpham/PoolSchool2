@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.poolschool2.SafetyDrill.DuckAndCover">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight=".5"
+            android:id="@+id/progressiveDrill1Image"
+            android:src ="@drawable/duckandcover"
+            android:layout_gravity="center_horizontal"
+            android:background="#ff000000" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It won’t be long before you’ve got to hide the cue ball, so get to work.
+
+            Set up these two shots with the goal of leaving the cue ball as close to the 7 ball as possible. As you master a shot from a particular spot, make it more difficult by moving the appropriate ball (the 1 ball in Shot A, the cue ball in Shot B) as shown. [From Bob Jewett]"
+            android:id="@+id/progressiveDrill1Text"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffffff"
+            android:background="#ff000000" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight=".5">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Successful"
+                android:textColor="#f00"
+                android:id="@+id/duckAndCoverRadio" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight=".5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Save"
+                android:id="@+id/duckAndCoverSaveButton" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Graph"
+                android:id="@+id/duckAndCoverGraphButton" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

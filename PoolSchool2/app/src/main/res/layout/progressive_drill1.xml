@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.poolschool2.CueBallControlDrills.ProgressiveDrill1"
+    android:background="#ff070102">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressiveDrill1Image"
+            android:src ="@drawable/drill_positionprogressive"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Here’s a position drill addressing the full complement of vertical-axis English options and adding a progressive element. It’s a real eye-opener. Start with a simple cut shot to sink the 1, and depending on whether you apply draw, follow or a center-ball hit, you can send your cue ball almost anywhere on the table. (The red lines are for the follow shot, the black for center-ball, and orange for draw.) Even better, most of the options are essentially at mid-table, the most powerful place to land. Practice landing the cue ball at the marked positions (mostly corresponding to the short-rail diamonds). Hit one position three times in a row, then move to the next. Master this drill, and you’ll jump a skill level."
+            android:id="@+id/progressiveDrill1Text"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+</RelativeLayout>

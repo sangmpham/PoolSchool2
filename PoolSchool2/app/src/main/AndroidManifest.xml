@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.poolschool.poolschool" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon1"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <activity
+            android:name="com.poolschool2.poolschool.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.poolschool2.drill.CueBallControl"
+            android:label="Cue Ball Control Drills" >
+            <intent-filter>
+                <action android:name="CueBallControl" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.poolschool2.poolschool.Drills"
+            android:label="Drills" >
+        </activity>
+        <activity
+            android:name="com.poolschool2.drill.Fundamental"
+            android:label="Fundamental" >
+        </activity>
+        <activity
+            android:name="com.poolschool2.CueBallControlDrills.ProgressiveDrill1"
+            android:label="@string/title_activity_progressive_drill1" >
+        </activity>
+        <activity
+            android:name="com.poolschool2.CueBallControlDrills.ProgressivePositionDrill2"
+            android:label="@string/title_activity_progressive_position_drill2" >
+        </activity>
+        <activity
+            android:name="com.poolschool2.CueBallControlDrills.ProgressivePositionDrill3"
+            android:label="@string/title_activity_progressive_position_drill3" >
+        </activity>
+        <activity
+            android:name="com.poolschool2.SafetyDrill.HalfTableSafety"
+            android:label="@string/title_activity_half_table_safety" >
+        </activity>
+        <activity
+            android:name="com.poolschool2.SafetyDrill.DuckAndCover"
+            android:label="@string/title_activity_duck_and_cover" >
+        </activity>
+        <activity
+            android:name="com.poolschool2.SafetyDrill.SafetyOrNot"
+            android:label="@string/title_activity_safety_or_not" >
+        </activity>
+        <activity
+            android:name="com.poolschool2.drill.KickDrills"
+            android:label="@string/title_activity_kick_drills" >
+            >
+        </activity>
+        <activity
+            android:name="com.poolschool2.KickDrill.KickIt"
+            android:label="@string/title_activity_kick_it" >
+        </activity>
+        <activity
+            android:name="com.poolschool2.KickDrill.ProgressiveKicking2"
+            android:label="@string/title_activity_progressive_kicking2" >
+        </activity>
+        <activity
+            android:name="com.poolschool2.KickDrill.ProgressiveKicking1"
+            android:label="@string/title_activity_progressive_kicking1" >
+        </activity>
+        <activity
+            android:name="com.poolschool2.drill.SafetyDrills"
+            android:label="@string/SafetyDrills" >
+            >
+        </activity>
+        <activity
+            android:name="com.poolschool2.fundamental.FundamentalList"
+            android:label="@string/title_activity_fundamental_list" >
+        </activity>
+        <activity
+            android:name="com.poolschool2.drill.ShotMakingDrillList"
+            android:label="@string/title_activity_shot_making_drill_list" >
+        </activity>
+        <activity
+            android:name="com.poolschool2.shotMakingDrills.RailShot"
+            android:label="@string/title_activity_rail_shot" >
+        </activity>
+        <activity
+            android:name="com.poolschool2.shotMakingDrills.Pocket9Drill"
+            android:label="@string/title_activity_pocket9_drill" >
+        </activity>
+        <activity
+            android:name="com.poolschool2.shotMakingDrills.AimToWin"
+            android:label="@string/title_activity_aim_to_win" >
+        </activity>
+        <activity
+            android:name="com.poolschool2.league.Ball9League"
+            android:label="@string/title_activity_ball9_league" >
+        </activity>
+        <activity
+            android:name="com.poolschool2.league.BCA8League"
+            android:label="@string/title_activity_bca8_league" >
+        </activity>
+        <activity
+            android:name="com.poolschool2.league.League"
+            android:label="@string/title_activity_league" >
+        </activity>
+        <activity
+            android:name="com.poolschool2.shotMakingDrills.GraphAimToWin"
+            android:label="@string/title_activity_graph_aim_towin" >
+        </activity>
+        <activity
+            android:name="com.poolschool2.league.ViewPreviousSession"
+            android:label="@string/title_activity_view_previous_session" >
+        </activity>
+        <activity
+            android:name="com.poolschool2.league.LeagueSearchResult"
+            android:label="@string/title_activity_league_search_result" >
+        </activity>
+    </application>
+
+</manifest>
